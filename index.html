@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+    <!-- link jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- link bootstrap file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- link reset file RESET NOT NEEDED DUE TO BOOTSTRAP -->
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    <!-- link style.css file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- link javascript file -->
+    <script src="assets/javascript/game.js"></script>
+
+
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+    let wins = 0;
+    let losses = 0;
+
+       $(document).ready(function() { 
+
+        // generate random number and write to the random number div 
+        var targetNumber = Math.floor(Math.random()*(100-1+1)+1);
+        $("#random-number").text(targetNumber);
+
+        // generate random numbers for all crystal images and create click event taht adds number to score 
+        let crystalOne = Math.floor(Math.random()*(50-1+1)+1);
+        console.log(crystalOne);
+        $("#crystalOne").attr("data-number", crystalOne);
+        $("#crystalOne").on("click", function(){
+            $("#score-counter").text(crystalOne);
+
+        });
+
+
+
+    
+    
+    
+    
+    })
+
+
+
+    </script>
+
+    <div id="heading">
+        <h1>Crystals Collector!</h1>
+    </div>
+
+    <div id="instructions" class="col-md-6">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a scpecific amount of points to your
+            total score. </p>
+        <p>You win the game by matching your total score to random number, you lose the game if your total score goes
+            above the random number. </p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the value of each crystal.</p>
+    </div>
+    <div id="random-number">
+
+    </div>
+    <div id="wins-losses" class="container">
+        Wins: 0
+        Losses: 0
+    </div>
+
+    <div id="crystal-images">
+        <img class = "crystal-image" id="crystalOne" src="assets/images/crystal1.jpg" alt="crystal 1">
+        <img class = "crystal-image" id="crystalTwo" src="assets/images/crystal2.jpg" alt="crystal 2">
+        <img class = "crystal-image" id="crystalThree" src="assets/images/crystal3.png" alt="crystal 3">
+        <img class = "crystal-image" id="crystalFour" src="assets/images/crystal4.png" alt="crystal 4">
+    </div>
+
+    <div id="score-announcement">
+        Your total score is:
+    </div>
+    <div id="score-counter">
+        0
+    </div>
+
+
+
+</body>
+
+</html>
