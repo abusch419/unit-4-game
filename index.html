@@ -26,31 +26,48 @@
 
     <script type="text/javascript">
 
-    let wins = 0;
-    let losses = 0;
+        var counter = 0;
+        let wins = 0;
+        let losses = 0;
 
-       $(document).ready(function() { 
+        $(document).ready(function () {
 
-        // generate random number and write to the random number div 
-        var targetNumber = Math.floor(Math.random()*(100-1+1)+1);
-        $("#random-number").text(targetNumber);
-
-        // generate random numbers for all crystal images and create click event taht adds number to score 
-        let crystalOne = Math.floor(Math.random()*(50-1+1)+1);
-        console.log(crystalOne);
-        $("#crystalOne").attr("data-number", crystalOne);
-        $("#crystalOne").on("click", function(){
-            $("#score-counter").text(crystalOne);
-
-        });
+            // generate random number and write to the random number div 
+            var targetNumber = Math.floor(Math.random() * (100 - 1 + 1) + 1);
+            $("#random-number").text(targetNumber);
 
 
+            //   set random value for crystal one 
+            let crystalOne = Math.floor(Math.random() * (20 - 1 + 1) + 1);
+            $("#crystalOne").attr("data-number", crystalOne);
+            //   set random value for crystal two
+            let crystalTwo = Math.floor(Math.random() * (20 - 1 + 1) + 1);
+            $("#crystalTwo").attr("data-number", crystalTwo);
+            //   set random value for crystal three
+            let crystalThree = Math.floor(Math.random() * (20 - 1 + 1) + 1);
+            $("#crystalThree").attr("data-number", crystalThree);
+            //   set random value for crystal four
+            let crystalFour = Math.floor(Math.random() * (20 - 1 + 1) + 1);
+            $("#crystalFour").attr("data-number", crystalFour);
 
-    
-    
-    
-    
-    })
+            // create function to add point to counter with each crystal click
+
+            $(".crystal-image").on("click", function () {
+                var crystalPoints = ($(this).attr("data-number"));
+                crystalPoints = parseInt(crystalPoints);
+                counter += crystalPoints;
+                $("#score-counter").text(counter);
+
+                if (counter < targetNumber) {
+
+                } else if (counter === targetNumber) {
+                    $("#wins-losses").text("increase wins by one")
+                }
+                else {
+                    $("#wins-losses").text("increase losses by one")
+                }
+            });
+        })
 
 
 
@@ -78,10 +95,10 @@
     </div>
 
     <div id="crystal-images">
-        <img class = "crystal-image" id="crystalOne" src="assets/images/crystal1.jpg" alt="crystal 1">
-        <img class = "crystal-image" id="crystalTwo" src="assets/images/crystal2.jpg" alt="crystal 2">
-        <img class = "crystal-image" id="crystalThree" src="assets/images/crystal3.png" alt="crystal 3">
-        <img class = "crystal-image" id="crystalFour" src="assets/images/crystal4.png" alt="crystal 4">
+        <img class="crystal-image" id="crystalOne" src="assets/images/crystal1.jpg" alt="crystal 1">
+        <img class="crystal-image" id="crystalTwo" src="assets/images/crystal2.jpg" alt="crystal 2">
+        <img class="crystal-image" id="crystalThree" src="assets/images/crystal3.png" alt="crystal 3">
+        <img class="crystal-image" id="crystalFour" src="assets/images/crystal4.png" alt="crystal 4">
     </div>
 
     <div id="score-announcement">
