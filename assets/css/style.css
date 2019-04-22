@@ -3,7 +3,7 @@ body {
 }
 
 #heading {
-    background-color: darkgrey;
+    background-color: teal;
     margin-left: 22px;
     padding-left: 5px;
     width: 350px;
@@ -11,7 +11,7 @@ body {
 }
 
 #instructions {
-    background-color: beige;
+    background-color:teal;
     margin-left: 22px;
     margin-top: 10px;
 }
