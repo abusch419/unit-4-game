@@ -1,7 +1,6 @@
 body {
-    background-color:lightblue;
+    background-color: lightblue;
 }
-
 
 #heading {
     background-color: darkgrey;
@@ -12,62 +11,69 @@ body {
 }
 
 #instructions {
-background-color: beige;
-margin-left: 22px;
-margin-top: 10px;
-
+    background-color: beige;
+    margin-left: 22px;
+    margin-top: 10px;
 }
 
 #random-number {
-background-color: teal;
-margin-left: 22px;
-margin-top: 10px;
-width: 150px;
-height: 80px;
-font-size: 30px;
-float: left;
+    background-color: teal;
+    margin-left: 22px;
+    margin-top: 10px;
+    width: 150px;
+    height: 80px;
+    font-size: 30px;
+    float: left;
 }
 
 #wins-losses {
     background-color: teal;
     width: 150px;
-height: 80px;
-font-size: 18px;
-margin-top: 26px;
-margin-left: 180px;
-text-align: center;
-
-
+    height: 80px;
+    font-size: 18px;
+    margin-top: 26px;
+    margin-left: 180px;
+    text-align: center;
 }
 
 #crystal-images {
-margin-top: 10px;
-margin-left: 22px;
-
-
+    margin-top: 10px;
+    margin-left: 22px;
 }
 
 .crystal-image {
     clear: both;
     height: 100px;
     width: 100px;
-    
-    }
+}
 
-    #score-announcement{
-        background-color: teal;
-        color: white;
-        margin-left: 22px;
-        margin-top: 10px;
-        width: 150px;
-        height: 20px;
-        font-size: 10px;
-        }
-        #score-counter {
-            background-color: teal;
-            margin-left: 22px;
-            margin-top: 10px;
-            width: 150px;
-            height: 80px;
-            font-size: 30px;
-            }
+#score-announcement {
+    background-color: teal;
+    color: white;
+    margin-left: 22px;
+    margin-top: 10px;
+    width: 150px;
+    height: 20px;
+    font-size: 10px;
+}
+
+#score-counter {
+    background-color: teal;
+    margin-left: 22px;
+    margin-top: 10px;
+    width: 150px;
+    height: 80px;
+    font-size: 30px;
+}
+
+#outcome {
+font-size: 15px;
+margin-bottom: 0;
+}
+#win-text {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+#loss-text {
+    font-size: 15px;
+}
