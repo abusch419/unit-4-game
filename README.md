@@ -6,7 +6,7 @@ A basic game of memory. There are four crystals below. By clicking on a crystal 
 ## Deployment
 
 This app was deployed using GitHub. 
-githubmasterlink!!!!!!!
+https://abusch419.github.io/unit-4-game/
 
 ## Built With
 
