@@ -1,79 +1,80 @@
 body {
-    background-color: lightblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    background: darkslategrey;
+    justify-content: center;
 }
 
-#heading {
-    background-color: teal;
-    margin-left: 22px;
-    padding-left: 5px;
-    width: 350px;
-    padding-bottom: 3px;
+body.image {
+    opacity: 0.8;
 }
 
-#instructions {
-    background-color:teal;
-    margin-left: 22px;
+.jumbotron {
+    margin-top: 100px;
+    opacity: 0.8;
+}
+
+
+.card {
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.game {
+   text-align: center;
+}
+
+#social-media-icon {
+    height: 20px;
+    width: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: unset;
+    flex: unset;
+}
+
+.nav-container {
+    position: fixed;
+    width: 100%;
+}
+
+.push {
+    height: 60px;
+}
+
+.nav-div {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#target-number {
     margin-top: 10px;
-}
-
-#random-number {
-    background-color: teal;
-    margin-left: 22px;
-    margin-top: 10px;
-    width: 150px;
-    height: 80px;
     font-size: 30px;
-    float: left;
 }
 
-#wins-losses {
-    background-color: teal;
-    width: 150px;
-    height: 80px;
-    font-size: 18px;
-    margin-top: 26px;
-    margin-left: 180px;
-    text-align: center;
-}
 
 #crystal-images {
     margin-top: 10px;
-    margin-left: 22px;
+    margin-bottom: 30px;
+    justify-content: center;
 }
 
 .crystal-image {
-    clear: both;
     height: 100px;
     width: 100px;
 }
 
-#score-announcement {
-    background-color: teal;
-    color: white;
-    margin-left: 22px;
-    margin-top: 10px;
-    width: 150px;
-    height: 20px;
-    font-size: 10px;
-}
-
-#score-counter {
-    background-color: teal;
-    margin-left: 22px;
-    margin-top: 10px;
-    width: 150px;
-    height: 80px;
+#random-number {
     font-size: 30px;
 }
 
-#outcome {
-font-size: 15px;
-margin-bottom: 0;
+#score-counter {
+   font-size: 30px; 
 }
-#win-text {
-    font-size: 15px;
-    margin-bottom: 0;
-}
-#loss-text {
-    font-size: 15px;
+
+.instructions {
+    justify-content: center;
+    text-align: center;
 }
